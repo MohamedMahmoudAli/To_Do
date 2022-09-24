@@ -38,9 +38,6 @@ class HomeLayout extends StatelessWidget {
           return Scaffold(
             key: scaffoldKey,
             appBar: AppBar(
-              actions: [
-                IconButton(onPressed: (){}, icon:Icon(Icons.dark_mode_outlined))
-              ],
               title: Text(
                 cubit.titles[cubit.currentIndex],
               ),
