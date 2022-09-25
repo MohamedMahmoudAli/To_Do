@@ -84,7 +84,7 @@ class HomeLayout extends StatelessWidget {
                               label: 'Task Title',
                               prefix: Icons.title,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 15.0,
                             ),
                             defaultFormField(
@@ -97,7 +97,6 @@ class HomeLayout extends StatelessWidget {
                                 ).then((value) {
                                   timeController.text =
                                       value!.format(context).toString();
-                                  print(value.format(context));
                                 });
                               },
                               validate: (String value) {
@@ -110,7 +109,7 @@ class HomeLayout extends StatelessWidget {
                               label: 'Task Time',
                               prefix: Icons.watch_later_outlined,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 15.0,
                             ),
                             defaultFormField(
@@ -168,18 +167,18 @@ class HomeLayout extends StatelessWidget {
               onTap: (index) {
                 cubit.changeIndex(index);
               },
-              items: [
-                BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.menu,
-                  ),
-                  label: 'Tasks',
-                ),
+              items: const [
                 BottomNavigationBarItem(
                   icon: Icon(
                     Icons.check_circle_outline,
                   ),
                   label: 'Done',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.menu,
+                  ),
+                  label: 'Tasks',
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(

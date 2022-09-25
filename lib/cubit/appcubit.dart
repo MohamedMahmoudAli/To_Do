@@ -1,8 +1,6 @@
-import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:to_do/screens/archived/archived.dart';
-import 'package:to_do/screens/done/done.dart';
 import 'package:to_do/screens/done/done.dart';
 import 'package:to_do/screens/newtask/newtask.dart';
 import 'package:to_do/cubit/states.dart';
@@ -42,12 +40,6 @@ class AppCubit extends Cubit<AppStates> {
       'todo.db',
       version: 1,
       onCreate: (database, version) {
-        // id integer
-        // title String
-        // date String
-        // time String
-        // status String
-
         print('database created');
         database
             .execute(
