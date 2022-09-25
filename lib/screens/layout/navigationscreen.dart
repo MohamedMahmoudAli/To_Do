@@ -1,16 +1,10 @@
-// import 'package:conditional_builder/conditional_builder.dart';
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:to_do/screens/archived/archived.dart';
-import 'package:to_do/models/done/done.dart';
-import 'package:to_do/screens/newtask/newtask.dart';
 import 'package:to_do/compentes/components.dart';
-// import 'package:to_do/shared/compentes/consetants.dart';
 import 'package:to_do/cubit/appcubit.dart';
 import 'package:to_do/cubit/states.dart';
-import 'package:sqflite/sqflite.dart';
 import 'package:intl/intl.dart';
 
 class HomeLayout extends StatelessWidget {
@@ -200,11 +194,4 @@ class HomeLayout extends StatelessWidget {
       ),
     );
   }
-
-// Instance of 'Future<String>'
-
-// Future<String> getName() async
-// {
-//   return 'Ahmed Ali';
-// }
 }
