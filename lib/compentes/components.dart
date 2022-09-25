@@ -17,7 +17,7 @@ Widget defaultButton({
         onPressed: (){return function();},
         child: Text(
           isUpperCase ? text.toUpperCase() : text,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white,
           ),
         ),
@@ -68,7 +68,7 @@ Widget defaultFormField({
           ),
         )
             : null,
-        border: OutlineInputBorder(),
+        border: const OutlineInputBorder(),
       ),
     );
 
@@ -96,7 +96,7 @@ Widget buildTaskItem(Map model, context) => Dismissible(
             children: [
               Text(
                 '${model['title']}',
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
                 ),
@@ -193,7 +193,7 @@ Widget tasksBuilder({
   fallback: (context) => Center(
     child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
-      children: [
+      children: const [
         Icon(
           Icons.menu,
           size: 100.0,
