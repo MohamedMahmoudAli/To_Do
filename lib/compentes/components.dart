@@ -74,8 +74,6 @@ Widget defaultFormField({
 
 Widget buildTaskItem(Map model, context) => Dismissible(
   key: Key(model['id'].toString()),
-  background: buildSwipeActionLeft(),
-  secondaryBackground:buildSwipeActionRight() ,
   child: Padding(
     padding: const EdgeInsets.all(20.0),
     child: Row(
@@ -96,7 +94,7 @@ Widget buildTaskItem(Map model, context) => Dismissible(
             children: [
               Text(
                 '${model['title']}',
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold,
                 ),
